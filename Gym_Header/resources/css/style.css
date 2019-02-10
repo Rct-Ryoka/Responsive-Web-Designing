@@ -1,0 +1,172 @@
+/*--------------------------------------------- * /
+/* BASIC SETUP * /
+/* ----------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+    font-family: 'Raleway' , 'Arial' , sans-serif ;
+    color: #555;
+    font-weight:400;
+    font-size: 25px;
+    text-rendering: optimizeLegibility;
+}
+/*--------------------------------------------- * /
+/* REUSABLE COMPONENTS * /
+/* ----------------------------------------------*/
+
+.row{
+    max-width: 1440px;
+    margin : 0 auto 0 auto;
+}
+
+/*--------------------------------------------- * /
+/* HEADER * /
+/* ----------------------------------------------*/
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.438) , rgba(0, 0, 0, 0.438)) ,url(img/gym-bg1.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 350%;
+    margin :0;
+    padding : 15px;
+    word-spacing: 3px;
+    letter-spacing: 5px;
+    border: 2px solid white;    
+    margin-bottom: 20px;
+    color : #fff;
+}
+
+.gym-text-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-90% , -50%);
+    
+}
+
+.logo {
+    height: 150px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.gym-nav{
+    list-style-type: none;
+    float : right;
+    margin-top: 60px;
+}
+
+.gym-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.gym-nav li a:link, 
+.gym-nav li a:visited{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    font-size:90%;
+    
+
+}
+
+.gym-nav li a:hover,
+.gym-nav li a:active{
+
+    border-bottom : 2px solid #e53e2d;
+    transition: border-bottom  0.2s ;
+}
+
+/*--------------------------------------------- * /
+/* BUTTONS * /
+/* ----------------------------------------------*/
+
+
+.btn{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding : 10px;
+    margin-left: 20px;
+    background-color: #e53e2d;
+    box-shadow: 0 5px 0 #7b190f;
+    
+}
+
+.btn:hover{
+    background-color: #a82315;
+    transition:  background-color 0.2s , color 0.2s;
+}
+.btn:active{
+    box-shadow: none;
+    top:5px;
+}
+
+/*--------------------------------------------- * /
+/* FEATURES * /
+/* ----------------------------------------------*/
+
+.gym-features {
+    padding: 80px 0 ; 
+} 
+/*Feature Headings*/
+h2,h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size : 190%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    
+}
+
+/*red line between the heading and the features*/
+h2:after{
+    display:block;
+    height: 2px;
+    background-color: #e53e2d;
+    content: " ";
+    width:100px;
+    margin: 0 auto;
+     margin-top: 30px; 
+}
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.box {
+    padding : 1%;
+}
+/*feature paragraphs*/
+.box p {
+    font-size: 70%;
+    line-height: 145%;
+}
+/*Feature Icon*/
+.icon-big {
+    font-size: 250%;
+    display: block;
+    color:#e53e2d;
+    margin-bottom: 10px;
+    text-align: center;
+}
